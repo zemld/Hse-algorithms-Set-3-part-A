@@ -30,9 +30,12 @@ void quickSortWrapping(std::vector<int> &array) {
 
 void quickSortRealization(std::vector<int> &array, int start_index, int end_index) {
     int pivot_index = permutateArrayAndReturnPivotIndex(array, start_index, end_index);
-
-    quickSortRealization(array, start_index, pivot_index);
-    quickSortRealization(array, pivot_index + 1, end_index);
+    if (start_index < pivot_index) {
+        quickSortRealization(array, start_index, pivot_index);
+    }
+    if (pivot_index + 1 < end_index) {
+        quickSortRealization(array, pivot_index + 1, end_index);
+    }
 }
 
 void introSortWrapping(std::vector<int> &array) {
