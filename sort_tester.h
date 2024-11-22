@@ -10,7 +10,7 @@
 class SortTester {
 public:
     template<class SortingFunction>
-    void storeMeasurmentsOfSortingVectors(std::vector<int> &array, std::string path_to_store_data, SortingFunction sorter) {
+    void storeTimeMeasurmentsOfSortingVectors(std::vector<int> &array, std::string path_to_store_data, SortingFunction sorter) {
         std::ofstream output(path_to_store_data);
         printHeadersIntoStream(output);
         const int start_size = 500;

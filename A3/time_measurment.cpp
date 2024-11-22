@@ -14,12 +14,12 @@ int main() {
     std::vector<int> reversed = generator.generateReversedArray(max_array_size);
 
     SortTester tester;
-    tester.storeMeasurmentsOfSortingVectors(almost_sorted, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/almost_sorted_with_quick.csv", quickSortWrapping);
-    tester.storeMeasurmentsOfSortingVectors(almost_sorted, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/almost_sorted_with_intro.csv", introSortWrapping);
-    tester.storeMeasurmentsOfSortingVectors(random, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/random_with_quick.csv", quickSortWrapping);
-    tester.storeMeasurmentsOfSortingVectors(random, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/random_with_intro.csv", introSortWrapping);
-    tester.storeMeasurmentsOfSortingVectors(reversed, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/reversed_with_quick.csv", quickSortWrapping);
-    tester.storeMeasurmentsOfSortingVectors(reversed, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/reversed_with_intro.csv", introSortWrapping);
+    tester.storeTimeMeasurmentsOfSortingVectors(almost_sorted, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/almost_sorted_with_quick.csv", quickSortWrapping);
+    tester.storeTimeMeasurmentsOfSortingVectors(almost_sorted, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/almost_sorted_with_intro.csv", introSortWrapping);
+    tester.storeTimeMeasurmentsOfSortingVectors(random, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/random_with_quick.csv", quickSortWrapping);
+    tester.storeTimeMeasurmentsOfSortingVectors(random, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/random_with_intro.csv", introSortWrapping);
+    tester.storeTimeMeasurmentsOfSortingVectors(reversed, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/reversed_with_quick.csv", quickSortWrapping);
+    tester.storeTimeMeasurmentsOfSortingVectors(reversed, "Hse_Algorithms/Set3/A/A3/SortingTimeMeasurments/reversed_with_intro.csv", introSortWrapping);
 
     return 0;
 }
