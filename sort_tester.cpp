@@ -5,6 +5,9 @@ void SortTester::storeMeasurmentsOfSortingVectors(std::vector<int> &array, std::
     std::ofstream output(path_to_store_data);
     SortTester tester;
     tester.printHeadersIntoStream(output);
+    const int start_size = 500;
+    const int max_array_size = 10000;
+    const int step = 500;
     for (int size = start_size; size <= max_array_size; size += step) {
         std::vector<int> array_part(array.begin(), array.begin() + size);
         int64_t time = tester.sortVectorAndGetTimeOfSorting(array_part, sorter);
