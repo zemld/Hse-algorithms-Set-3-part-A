@@ -8,6 +8,8 @@
 
 class SortTester {
 public:
+    template <class SortingFunction>
+    void storeMeasurmentsOfSortingVectors(std::vector<int> &array, std::string path_to_store_data, SortingFunction sorter);
     void printHeadersIntoStream(std::ofstream &output);
     template <class SortingFunction>
     int64_t sortVectorAndGetTimeOfSorting(std::vector<int> &array, SortingFunction sorter);
