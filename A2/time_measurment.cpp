@@ -12,19 +12,19 @@ int64_t standartMergeSortArrayAndGetTime(std::vector<int> &array);
 int64_t mergeAndInsertionSortArrayAndGetTime(std::vector<int> &array);
 
 int main() {
-    const std::string relative_path_to_file_for_random_array_standart_merge_sort = "Hse_Algorithms/Set3/A/A2/CsvData/random_array_standart_merge_sort.csv";
-    const std::string relative_path_to_file_for_reversed_array_standart_merge_sort = "Hse_Algorithms/Set3/A/A2/CsvData/reversed_array_standart_merge_sort.csv";
-    const std::string relative_path_to_file_for_almost_sorted_array_standart_merge_sort = "Hse_Algorithms/Set3/A/A2/CsvData/almost_sorted_array_standart_merge_sort.csv";
-    const std::string relative_path_to_file_for_random_array_merge_and_insertion_sort = "Hse_Algorithms/Set3/A/A2/CsvData/random_array_merge_and_insertion_sort.csv";
-    const std::string relative_path_to_file_for_reversed_array_merge_and_insertion_sort = "Hse_Algorithms/Set3/A/A2/CsvData/reversed_array_merge_and_insertion_sort.csv";
-    const std::string relative_path_to_file_for_almost_sorted_array_merge_and_insertion_sort = "Hse_Algorithms/Set3/A/A2/CsvData/almost_sorted_array_merge_and_insertion_sort.csv";
+    const std::string path_to_file_for_random_array_standart_merge_sort = "Hse_Algorithms/Set3/A/A2/CsvData/random_array_standart_merge_sort.csv";
+    const std::string path_to_file_for_reversed_array_standart_merge_sort = "Hse_Algorithms/Set3/A/A2/CsvData/reversed_array_standart_merge_sort.csv";
+    const std::string path_to_file_for_almost_sorted_array_standart_merge_sort = "Hse_Algorithms/Set3/A/A2/CsvData/almost_sorted_array_standart_merge_sort.csv";
+    const std::string path_to_file_for_random_array_merge_and_insertion_sort = "Hse_Algorithms/Set3/A/A2/CsvData/random_array_merge_and_insertion_sort.csv";
+    const std::string path_to_file_for_reversed_array_merge_and_insertion_sort = "Hse_Algorithms/Set3/A/A2/CsvData/reversed_array_merge_and_insertion_sort.csv";
+    const std::string path_to_file_for_almost_sorted_array_merge_and_insertion_sort = "Hse_Algorithms/Set3/A/A2/CsvData/almost_sorted_array_merge_and_insertion_sort.csv";
 
-    std::ofstream output_of_random_array_standart_merge_sort(relative_path_to_file_for_random_array_standart_merge_sort);
-    std::ofstream output_of_reversed_array_standart_merge_sort(relative_path_to_file_for_reversed_array_standart_merge_sort);
-    std::ofstream output_of_almost_sorted_array_standart_merge_sort(relative_path_to_file_for_almost_sorted_array_standart_merge_sort);
-    std::ofstream output_of_random_array_merge_and_insertion_sort(relative_path_to_file_for_random_array_merge_and_insertion_sort);
-    std::ofstream output_of_reversed_array_merge_and_insertion_sort(relative_path_to_file_for_reversed_array_merge_and_insertion_sort);
-    std::ofstream output_of_almost_sorted_array_merge_and_insertion_sort(relative_path_to_file_for_almost_sorted_array_merge_and_insertion_sort);
+    std::ofstream output_of_random_array_standart_merge_sort(path_to_file_for_random_array_standart_merge_sort);
+    std::ofstream output_of_reversed_array_standart_merge_sort(path_to_file_for_reversed_array_standart_merge_sort);
+    std::ofstream output_of_almost_sorted_array_standart_merge_sort(path_to_file_for_almost_sorted_array_standart_merge_sort);
+    std::ofstream output_of_random_array_merge_and_insertion_sort(path_to_file_for_random_array_merge_and_insertion_sort);
+    std::ofstream output_of_reversed_array_merge_and_insertion_sort(path_to_file_for_reversed_array_merge_and_insertion_sort);
+    std::ofstream output_of_almost_sorted_array_merge_and_insertion_sort(path_to_file_for_almost_sorted_array_merge_and_insertion_sort);
     printHeadersIntoOutputStream(output_of_random_array_standart_merge_sort);
     printHeadersIntoOutputStream(output_of_reversed_array_standart_merge_sort);
     printHeadersIntoOutputStream(output_of_almost_sorted_array_standart_merge_sort);
